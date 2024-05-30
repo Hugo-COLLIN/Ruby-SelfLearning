@@ -46,7 +46,7 @@ module Multiplication
 
     def self.is_valid?(a)
         max = 10
-        if a <= 10
+        if a <= max
             return "Dispo"
         else
             return "Non-dispo"
