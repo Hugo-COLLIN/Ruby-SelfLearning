@@ -10,7 +10,9 @@
     <%= javascript_importmap_tags %>
   </head>
   <body>
-    <%= render partial: 'layouts/navigation' %> <%# appel à un partiel (fichier externe) %>
-    <%= yield %>
+    <div class="container">
+      <%= render partial: 'layouts/navigation' %> <%# appel à un partiel (fichier externe) %>
+      <%= yield %>
+    </div>
   </body>
 </html>
