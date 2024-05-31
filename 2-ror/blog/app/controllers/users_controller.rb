@@ -1,10 +1,11 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :set_user, only: [:show, :edit, :update, :destroy] # ajoute/applique la variable set_user à toutes les fonctions spécifiées
   
   def index
   end
 
   def show
+    @posts = @user.posts
   end
 
   def edit
