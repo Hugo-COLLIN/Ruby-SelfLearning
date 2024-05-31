@@ -9,8 +9,8 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
   <body>
+    <%= render partial: 'layouts/navigation' %> <%# appel à un partiel (fichier externe) %>
     <%= yield %>
   </body>
 </html>
